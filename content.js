@@ -8,7 +8,7 @@ function kana() {
 
 
 
-	    $.getJSON("https://ituyama.github.io/kana/kana.json?callback=?", (data) => {
+	    $.getJSON("https://ituyama.github.io/kana/kana.json?data=?", (data) => {
 	      for (let i=0; i<data.length; i++){
 	        console.log(`userid=${data[i].kana_list}, username=${data[i].kanji_list}`);
 

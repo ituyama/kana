@@ -22,7 +22,7 @@
   "default_title": "カタカナ語変換"
 },
   "content_scripts": [{
-  "matches": ["<all_urls>"],
+  "matches": ["<all_urls>","https://ituyama.github.io/kana/kana.json"],
     "js": [
     "content.js","jquery.min.js"
     ]

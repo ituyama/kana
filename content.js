@@ -6,11 +6,13 @@ chrome.extension.onMessage.addListener(function(request, sender, sendResponse) {
 
 function kana() {
 
+	$.getJSON("kana.json", function(json) {
+	    console.log(json); // this will show the info it in firebug console
+	});
 
-
-	    $.getJSON("https://ituyama.github.io/kana/kana.json?callback=?", (callback) => {
-	      for (let i=0; i<callback.length; i++){
-	        console.log(`userid=${callback[i].kana_list}, username=${callback[i].kanji_list}`);
+	    $.getJSON("", (data) => {
+	      for (let i=0; i<data.length; i++){
+	        console.log(`userid=${data[i].kana_list}, username=${data[i].kanji_list}`);
 
 
 

@@ -8,9 +8,9 @@ function kana() {
 
 
 
-	    $.getJSON("https://ituyama.github.io/kana/kana.json?data=?", (data) => {
-	      for (let i=0; i<data.length; i++){
-	        console.log(`userid=${data[i].kana_list}, username=${data[i].kanji_list}`);
+	    $.getJSON("https://ituyama.github.io/kana/kana.json?callback=?", (callback) => {
+	      for (let i=0; i<callback.length; i++){
+	        console.log(`userid=${callback[i].kana_list}, username=${callback[i].kanji_list}`);
 
 
 
